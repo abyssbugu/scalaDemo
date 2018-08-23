@@ -14,6 +14,8 @@ object MethodAndFunction {
     println(m2(f2))
 
 //    将方法转换成函数，只需要在方法的后面加上一个下划线
+    val f3 =m2 _
+    println(f3)
   }
 
   //定义一个方法
