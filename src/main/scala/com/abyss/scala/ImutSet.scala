@@ -31,7 +31,7 @@ object ImutSet {
     //返回第一个不同于第二个的元素集合
     println(set.diff(set1))
     //返回第一个不同于第二个的元素集合
-    set1.diff(set)
+    println(set1.diff(set))
     //取子 set(2,5 为元素位置, 从 0 开始，包含头不包含尾)
     println(set.slice(2, 5))
     //迭代所有的子 set，取指定的个数组合
