@@ -10,7 +10,7 @@ import scala.collection.mutable.Map
   * 2、利用元组构建 val map=Map((键，值),(键，值),(键，值)....)
   */
 
-object mapDemo {
+object MapDemo {
   def main(args: Array[String]): Unit = {
 
     //获取值:值=map(键)
@@ -31,6 +31,10 @@ object mapDemo {
     scores += ("suck" -> 100, "a" -> 55)
 
     println(scores)
+
+    //对偶的集合转映射
+    val arr4 = Array(("tom", 22), ("嗷嗷", 23), (11, 22))
+    println(arr4.toMap)
 
   }
 
