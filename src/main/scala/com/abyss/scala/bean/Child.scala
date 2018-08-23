@@ -12,4 +12,14 @@ class Child extends Father {
   val score = "A"
 
   def getScore = this.score
+
+  override def getName: String = super.getName
+
 }
+
+object Child extends App {
+  val c = new Child()
+  println(c.getName)
+
+}
+
