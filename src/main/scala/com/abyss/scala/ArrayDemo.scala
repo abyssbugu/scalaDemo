@@ -34,9 +34,19 @@ object ArrayDemo {
     //追加多个元素
     ab += (2, 3, 4, 5) //追加一个数组++=
     ab ++= Array(6, 7) //追加一个数组缓冲
-    ab ++= ArrayBuffer(8,9) //打印数组缓冲 ab
+    ab ++= ArrayBuffer(8, 9) //打印数组缓冲 ab
     //在数组某个位置插入元素用 insert，从某下标插入
     ab.insert(0, -1, 0) //删除数组某个位置的元素用remove 按照下标删除
+
+    //拉链操作 使用 zip 命令可以将多个值绑定在一起
+    val names = Array("aa", "bb", "cc")
+    val scores = Array(44, 55, 66)
+    println(names.zip(scores).toMap)
+
+    //如果其中一个元素的个数比较少，可以使用 zipAll 用默认的元素填充
+    val scores2 = Array(44, 55)
+    println(names.zipAll(scores2,"dd",100).toMap)
+
 
 
   }
