@@ -1,4 +1,4 @@
-package com.abyss.scala
+package com.abyss.scala.bean
 
 /**
   * 在Scala中，类并不用声明为public类型的。

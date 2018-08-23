@@ -38,6 +38,8 @@ object MutMap {
     for (x <- user.keys) println(x + " -> " + user(x))
     //遍历 map 方法二:模式匹配
     for ((x, y) <- user) println(x + " -> " + y)
+    //遍历 map 方法三:通过 foreach
+    user.foreach { case (x, y) => println(x + " -> " + y) }
   }
 
 }
