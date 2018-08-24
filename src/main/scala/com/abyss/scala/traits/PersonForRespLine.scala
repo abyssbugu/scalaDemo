@@ -1,4 +1,4 @@
-package com.abyss.scala.`trait`
+package com.abyss.scala.traits
 
 /**
   * Created by Abyss on 2018/8/23.
