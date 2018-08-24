@@ -24,7 +24,7 @@ class YourActor extends Actor {
 
 object YourActor {
   def main(args: Array[String]): Unit = {
-    val actor = new YourActor()
+    val actor = new MsgActor()
     actor.start()
     actor ! "start"
     actor ! "stop"
